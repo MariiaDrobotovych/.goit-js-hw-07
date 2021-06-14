@@ -1,12 +1,13 @@
 const buttonDecrementRef = document.querySelector('[data-action="decrement"]');
 const buttonIncrementRef = document.querySelector('[data-action="increment"]');
 const valueRef = document.querySelector('#value');
+let number = 0;
 
 const decrement = () => {
-    valueRef.textContent = parseInt(valueRef.textContent) - 1;
+    valueRef.textContent = number -= 1;
 };
 const increment = () => {
-    valueRef.textContent = parseInt(valueRef.textContent) + 1;
+    valueRef.textContent = number += 1;
 };
 
 buttonDecrementRef.addEventListener('click', decrement);
