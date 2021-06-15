@@ -3,7 +3,7 @@ console.log(`В списке ${categoriesRef.length} категории.`);
 
 
 const categoryList = () => {
-    return [...categoriesRef].forEach((category)=>{
+    return categoriesRef.forEach((category)=>{
         const titleRef = category.querySelector('.item h2');
         const categoryListItemRef = category.children;
     
